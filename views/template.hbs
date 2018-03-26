@@ -1,0 +1,29 @@
+<p>Skills
+<div class="key_value" style="font-size:10px;">{{#each skills}}{{this}}{{/each}}</div>
+</p>
+<p>Education
+<div class="key_value" style="font-size:10px;">
+  {{#each education}}
+    School Name:{{school_name}}
+    <p>Logo: {{logo}}</p>
+    <p>Title: {{title}}</p>
+    <p>Year: {{year}}</p>
+{{/each}}
+</div>
+</p>
+
+<p>Experiences
+<div class="key_value" style="font-size:10px;">
+  {{#each experiences}}
+    Company Name: {{company}}
+    <p>Company Logo: {{company_logo}}</p>
+    <p>Position: {{postion}}</p>
+    <p>Duties: {{duties}}</p>
+    {{#with work_year as |work_year|}}
+    <p>Work Year: {{work_year}}</p>
+    {{else}}
+    <p></p>
+    {{/with}}
+{{/each}}
+</div>
+</p>
